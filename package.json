@@ -17,6 +17,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.12",
     "autoprefixer": "^10.4.19",
     "gatsby": "^5.13.3",
     "gatsby-plugin-google-gtag": "^5.13.1",
@@ -36,6 +37,7 @@
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "daisyui": "^4.10.1",
     "gh-pages": "^6.1.1",
     "typescript": "^5.3.3"
   }
