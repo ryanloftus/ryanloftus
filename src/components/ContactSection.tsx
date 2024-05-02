@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Subheading } from "./Subheading";
+
 type Social = {
   text: string;
   url: string;
@@ -8,12 +10,16 @@ type Social = {
 
 const socials: Social[] = [
   {
+    text: "LinkedIn",
+    url: "https://www.linkedin.com/in/ryan-loftus-310455176/",
+  },
+  {
     text: "GitHub",
     url: "https://github.com/ryanloftus",
   },
   {
-    text: "LinkedIn",
-    url: "https://www.linkedin.com/in/ryan-loftus-310455176/",
+    text: "Instagram",
+    url: "https://www.instagram.com/ryan.loftus10/"
   },
   {
     text: "Email",
@@ -23,20 +29,20 @@ const socials: Social[] = [
 
 export const ContactSection: React.FC<{}> = () => (
   <>
-    <h2 id="contact">Contact</h2>
-    <ul>
+    <Subheading text="Contact" />
+    <div className="grid grid-cols-4 gap-4">
       {
         socials.map((social) => {
           return (
-            <li>
-              <a className="hover:text-primary" href={social.url} target="_blank">
+            <div className="col-span-1">
+              <a className="hover:text-primary underline underline-offset-2 decoration-2" href={social.url} target="_blank">
                 {social.text}
                 {social.text !== "Email" && <span className="material-symbols-outlined align-text-bottom text-sm ml-1">open_in_new</span>}
               </a>
-            </li>
+            </div>
           )
         })
       }
-    </ul>
+    </div>
   </>
 );

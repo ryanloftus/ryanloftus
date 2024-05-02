@@ -1,39 +1,29 @@
 import React from "react";
 
-type Project = {
-  name: string;
-  url: string;
-  imageUrl: string;
-  subtitle: string;
-};
+import { Subheading } from "./Subheading";
+import { WorkTile, Work } from "./WorkTile";
 
-const ProjectTile: React.FC<Project> = ({ name, url, imageUrl, subtitle }) => (
-  <a href={url} target="_blank" className="card w-64 bg-neutral p-0 m-0 hover:brightness-110 no-underline">
-    <figure className="m-0"><img src={imageUrl}/></figure>
-    <div className="card-body p-2">
-      <h3 className="card-title m-1 underline">{name}</h3>
-      <p className="card-text p-0 m-1">{subtitle}</p>
-    </div>
-  </a>
-);
-
-const projects: Project[] = [
+const projects: Work[] = [
   {
-    name: "Stock Analysis Tool",
-    url: "https://ryanloftus.github.io/StockAnalysis/",
+    title: "Stock Analysis Tool",
+    url: "https://github.com/ryanloftus/stock-analysis",
+    imageUrl: "https://github.com/ryanloftus/stock-analysis/assets/43321270/f88bef52-2acf-4c42-96cb-5976c12a12a5",
+    description: "Summary information, a chart price over time, technical indicators, recommendation trends, and related news.",
+  },
+  {
+    title: "Pokemon OceanBlue",
+    url: "https://github.com/Jake-L/PokemonOceanBlue",
     imageUrl: "https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1400-c100.jpg",
-    subtitle: "A website that provides typical summary information, a graph of the stock's price over time, common technical indicators, recommendation trends, and related news."
-  }
+    description: "A Pokemon game created in Java.",
+  },
 ]
 
 export const ProjectsSection: React.FC<{}> = () => (
   <>
-    <h2 id="projects">Projects</h2>
-    <div className="prose-invert">
+    <Subheading text="Projects" />
+    <div className="grid grid-cols-3 gap-4">
       {
-        projects.map((project) => (
-          <ProjectTile name={project.name} url={project.url} imageUrl={project.imageUrl} subtitle={project.subtitle} />
-        ))
+        projects.map((project) => <WorkTile work={project} />)
       }
     </div>
   </>

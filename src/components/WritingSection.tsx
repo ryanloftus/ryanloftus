@@ -1,7 +1,9 @@
 import React from "react";
 
+import { Subheading } from "./Subheading";
+
 export const WritingSection: React.FC<{}> = () => (
   <>
-    <h2 id="writing">Writing</h2>
+    <Subheading text="Writing" />
   </>
 );

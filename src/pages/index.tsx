@@ -11,8 +11,8 @@ const IndexPage: React.FC<PageProps> = () => {
     <main>
       <NavBar />
       <center>
-        <article className="prose text-left">
-          <h1>Ryan Loftus</h1>
+        <article className="text-left max-w-screen-md">
+          <h1 className="text-6xl font-semibold">Ryan Loftus</h1>
           <AboutSection />
           <ContactSection />
           <ProjectsSection />
