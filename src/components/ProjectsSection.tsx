@@ -16,6 +16,11 @@ const projects: Work[] = [
     imageUrl: "https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1400-c100.jpg",
     description: "A Pokemon game created in Java.",
   },
+  {
+    title: "More...",
+    url: "https://github.com/ryanloftus?tab=repositories",
+    description: "Check out more of my projects on GitHub.",
+  }
 ]
 
 export const ProjectsSection: React.FC<{}> = () => (

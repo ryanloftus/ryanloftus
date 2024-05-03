@@ -2,12 +2,11 @@ import React from "react";
 import logo from "../images/icon.png";
 
 type NavLinkProps = {
-  text: string;
-  sectionId: string;
+  sectionTitle: string;
 };
 
-const NavLink: React.FC<NavLinkProps> = ({ text, sectionId }) => (
-  <a href={`#${sectionId}`} className="text-xl hover:text-primary hover:underline hover:underline-offset-3">{text}</a>
+const NavLink: React.FC<NavLinkProps> = ({ sectionTitle }) => (
+  <a href={`#${sectionTitle}`} className="text-xl hover:text-primary hover:underline hover:underline-offset-3">{sectionTitle}</a>
 );
 
 export const NavBar: React.FC<{}> = () => (
@@ -17,10 +16,10 @@ export const NavBar: React.FC<{}> = () => (
     </div>
     <div className="flex-none">
       <ul className="menu menu-horizontal px-1">
-        <li><NavLink text="About" sectionId="about"/></li>
-        <li><NavLink text="Contact" sectionId="contact"/></li>
-        <li><NavLink text="Projects" sectionId="projects"/></li>
-        <li><NavLink text="Writing" sectionId="writing"/></li>
+        <li><NavLink sectionTitle="About"/></li>
+        <li><NavLink sectionTitle="Contact"/></li>
+        <li><NavLink sectionTitle="Projects"/></li>
+        <li><NavLink sectionTitle="Writing"/></li>
       </ul>
     </div>
   </nav>
