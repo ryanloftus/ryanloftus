@@ -2,19 +2,39 @@ import React from "react";
 
 import { Subheading } from "./Subheading";
 import { WorkTile, Work } from "./WorkTile";
+import civicSearchGeomentionsImage from "../images/civicsearch-geomentions.png";
+import stockAnalysisImage from "../images/stock-analysis.png";
+import pokemonOceanBlueImage from "../images/pokemon-oceanblue.png";
+import socialMediaBackendImage from "../images/social-media-backend.png";
 
 const projects: Work[] = [
   {
+    title: "CivicSearch Geomentions",
+    url: "https://medium.com/@ryanloftus02/finding-mentions-of-local-places-in-city-council-meetings-c3c6bd16ae42",
+    imageSrc: civicSearchGeomentionsImage,
+    description: "Maps of North American cities highlighting locations that are discussed by local government.",
+    technologies: ["Python", "Spark", "SQLite", "Flask", "ReactJS"],
+  },
+  {
+    title: "Social Media Backend",
+    url: "https://github.com/ryanloftus/social-media-backend",
+    imageSrc: socialMediaBackendImage,
+    description: "A social media backend with user authentication, posts, likes, comments, chats, and follows.",
+    technologies: ["TypeScript", "GraphQL", "Redis", "PostgreSQL", "TypeORM"],
+  },
+  {
     title: "Stock Analysis Tool",
     url: "https://github.com/ryanloftus/stock-analysis",
-    imageUrl: "https://github.com/ryanloftus/stock-analysis/assets/43321270/f88bef52-2acf-4c42-96cb-5976c12a12a5",
+    imageSrc: stockAnalysisImage,
     description: "Summary information, a chart price over time, technical indicators, recommendation trends, and related news.",
+    technologies: ["JavaScript", "HTML", "CSS"]
   },
   {
     title: "Pokemon OceanBlue",
     url: "https://github.com/Jake-L/PokemonOceanBlue",
-    imageUrl: "https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1400-c100.jpg",
+    imageSrc: pokemonOceanBlueImage,
     description: "A Pokemon game created in Java.",
+    technologies: ["Java", "SQLite"],
   },
   {
     title: "More...",

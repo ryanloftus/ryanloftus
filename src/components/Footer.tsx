@@ -11,7 +11,7 @@ export const Footer: React.FC<{}> = () => (
         Built with <FooterLink url="https://www.gatsbyjs.com/" text="Gatsby" 
         />, <FooterLink url="https://www.reactjs.org/" text="ReactJS" 
         />, <FooterLink url="https://www.typescriptlang.org/" text="TypeScript" 
-        />, <FooterLink url="https://www.tailwindcss.com/" text="Tailwind CSS" 
+        />, <FooterLink url="https://www.tailwindcss.com/" text="TailwindCSS" 
         />, and <FooterLink url="https://www.daisyui.com/" text="DaisyUI" />.
       </p>
     </div>
