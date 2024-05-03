@@ -6,6 +6,7 @@ import civicSearchGeomentionsImage from "../images/civicsearch-geomentions.png";
 import stockAnalysisImage from "../images/stock-analysis.png";
 import pokemonOceanBlueImage from "../images/pokemon-oceanblue.png";
 import socialMediaBackendImage from "../images/social-media-backend.png";
+import algoVisualizerImage from "../images/algo-visualizer.png";
 
 const projects: Work[] = [
   {
@@ -21,6 +22,13 @@ const projects: Work[] = [
     imageSrc: socialMediaBackendImage,
     description: "A social media backend with user authentication, posts, likes, comments, chats, and follows.",
     technologies: ["TypeScript", "GraphQL", "Redis", "PostgreSQL", "TypeORM"],
+  },
+  {
+    title: "Algo Visualizer",
+    url: "https://gihub.com/ryanloftus/algo-visualizer",
+    imageSrc: algoVisualizerImage,
+    description: "Visualize popular sorting algorithms in your browser.",
+    technologies: ["TypeScript", "ReactJS", "TailwindCSS"],
   },
   {
     title: "Stock Analysis Tool",

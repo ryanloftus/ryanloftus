@@ -11,6 +11,6 @@ export const AboutSection: React.FC<{}> = () => (
       I am interested in software engineering, data science, and AI.
     </p>
     <br />
-    <a href="" target="_blank" className="p-2 underline underline-offset-2 decoration-2 hover:text-primary">Resume<span className="material-symbols-outlined align-text-bottom text-sm ml-1">open_in_new</span></a>
+    <a href="../../Resume.pdf" target="_blank" className="p-2 underline underline-offset-2 decoration-2 hover:text-primary">Resume<span className="material-symbols-outlined align-text-bottom text-sm ml-1">open_in_new</span></a>
   </>
 );

@@ -30,6 +30,7 @@ export default IndexPage;
 export const Head: HeadFC = () => (
   <>
     <title>Ryan Loftus</title>
+    <meta name="description" content="Ryan Loftus is a Computer Science student at the University of Waterloo and a Software Engineer." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300" rel="stylesheet" />
