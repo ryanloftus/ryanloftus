@@ -5,7 +5,7 @@ const FooterLink: React.FC<{url: string, text: string}> = ({url, text}) => (
 );
 
 export const Footer: React.FC<{}> = () => (
-  <footer>
+  <footer className="text-sm brightness-90">
     <div className="flex justify-center items-center mt-8 text-base-content">
       <p>
         Built with <FooterLink url="https://www.gatsbyjs.com/" text="Gatsby" 

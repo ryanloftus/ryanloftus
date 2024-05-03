@@ -21,7 +21,7 @@ const projects: Work[] = [
     url: "https://github.com/ryanloftus/social-media-backend",
     imageSrc: socialMediaBackendImage,
     description: "A social media backend with user authentication, posts, likes, comments, chats, and follows.",
-    technologies: ["TypeScript", "GraphQL", "Redis", "PostgreSQL", "TypeORM"],
+    technologies: ["TypeScript", "GraphQL", "Redis", "TypeORM"],
   },
   {
     title: "Algo Visualizer",
@@ -34,7 +34,7 @@ const projects: Work[] = [
     title: "Stock Analysis Tool",
     url: "https://github.com/ryanloftus/stock-analysis",
     imageSrc: stockAnalysisImage,
-    description: "Summary information, a chart price over time, technical indicators, recommendation trends, and related news.",
+    description: "Summary information, a chart of price over time, technical indicators, recommendation trends, and related news.",
     technologies: ["JavaScript", "HTML", "CSS"]
   },
   {

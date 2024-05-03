@@ -18,26 +18,30 @@ const socials: Social[] = [
     url: "https://github.com/ryanloftus",
   },
   // {
-  //   text: "Instagram",
-  //   url: "https://www.instagram.com/ryan.loftus10/"
-  // },
+    //   text: "Instagram",
+    //   url: "https://www.instagram.com/ryan.loftus10/"
+    // },
   {
     text: "Email",
     url: "mailto:ryanloftus02@outlook.com",
+  },
+  {
+    text: "Résumé",
+    url: "../../Resume.pdf",
   },
 ];
 
 export const ContactSection: React.FC<{}> = () => (
   <>
     <Subheading text="Contact" />
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-4 gap-4">
       {
         socials.map((social) => {
           return (
-            <div className="col-span-1">
-              <a className="p-2 hover:text-primary underline underline-offset-2 decoration-2" href={social.url} target="_blank">
+            <div className="col-span-1 font-light">
+              <a className="p-2 hover:text-primary" href={social.url} target="_blank">
                 {social.text}
-                {social.text !== "Email" && <span className="material-symbols-outlined align-text-bottom text-sm ml-1">open_in_new</span>}
+                <span className="material-symbols-outlined align-text-bottom text-sm ml-1">open_in_new</span>
               </a>
             </div>
           )
