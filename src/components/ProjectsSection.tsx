@@ -25,7 +25,7 @@ const projects: Work[] = [
   },
   {
     title: "Algo Visualizer",
-    url: "https://gihub.com/ryanloftus/algo-visualizer",
+    url: "https://github.com/ryanloftus/algo-visualizer",
     imageSrc: algoVisualizerImage,
     description: "Visualize popular sorting algorithms in your browser.",
     technologies: ["TypeScript", "ReactJS", "TailwindCSS"],
