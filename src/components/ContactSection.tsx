@@ -27,7 +27,7 @@ const socials: Social[] = [
   },
   {
     text: "Résumé",
-    url: "../../Resume.pdf",
+    url: "/../Resume.pdf",
   },
 ];
 
