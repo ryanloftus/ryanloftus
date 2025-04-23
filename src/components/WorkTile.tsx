@@ -18,7 +18,7 @@ export const WorkTile: React.FC<{work: Work}> = ({work}) => {
     )
   }
   return (
-    <a href={work.url} target="_blank" className="card col-span-1 p-0 m-0 h-92 bg-neutral hover:brightness-125 hover:text-primary no-underline">
+    <a href={work.url} target="_blank" className="card col-span-1 p-0 m-0 h-92 hover:brightness-125 hover:text-primary no-underline shadow-md">
       {
         work.imageSrc ?
           <figure className="m-0 brightness-90">
@@ -34,7 +34,7 @@ export const WorkTile: React.FC<{work: Work}> = ({work}) => {
         <div className="card-actions mx-1 mb-2">
           {
             work.technologies && work.technologies.map((technology) => (
-              <span className="m-0 badge badge-ghost text-secondary text-xs">{technology}</span>
+              <span className="m-0 badge badge-ghost text-xs">{technology}</span>
             ))
           }
         </div>

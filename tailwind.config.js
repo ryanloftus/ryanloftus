@@ -1,24 +1,5 @@
 const plugin = require('tailwindcss/plugin')
 
-const radialGradientPlugin = plugin(
-  function ({ matchUtilities, theme }) {
-    matchUtilities(
-      {
-        // map to bg-radient-[*]
-        'bg-radient': value => ({
-          'background-image': `radial-gradient(${value},var(--tw-gradient-stops))`,
-        }),
-      },
-      { values: theme('radialGradients') }
-    )
-  },
-  {
-    theme: {
-      radialGradients: _presets(),
-    },
-  }
-)
-
 /**
  * utility class presets
  */
@@ -52,8 +33,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui"), radialGradientPlugin],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: ["synthwave"]
+    themes: ["light"]
   }
 }
