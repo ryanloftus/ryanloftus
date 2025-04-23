@@ -17,10 +17,6 @@ const socials: Social[] = [
     text: "GitHub",
     url: "https://github.com/ryanloftus",
   },
-  // {
-    //   text: "Instagram",
-    //   url: "https://www.instagram.com/ryan.loftus10/"
-    // },
   {
     text: "Email",
     url: "mailto:ryanloftus02@outlook.com",

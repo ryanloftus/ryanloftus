@@ -6,21 +6,19 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { WritingSection } from "../components/WritingSection";
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
-import { RadialGradient } from "../components/RadialGradient";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={{fontFamily: 'Inter, sans-serif'}}>
       <center className="pt-10">
         <article className="text-left max-w-screen-md p-8">
-          <h1 className="text-6xl font-semibold">Ryan Loftus</h1>
+          <h1 className="text-6xl font-semibold">Hey, I'm Ryan</h1>
           <AboutSection />
           <ContactSection />
           <ProjectsSection />
         </article>
       </center>
-      <RadialGradient />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };

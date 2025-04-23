@@ -7,8 +7,16 @@ import stockAnalysisImage from "../images/stock-analysis.png";
 import pokemonOceanBlueImage from "../images/pokemon-oceanblue.png";
 import socialMediaBackendImage from "../images/social-media-backend.png";
 import algoVisualizerImage from "../images/algo-visualizer.png";
+import pathTracerImage from "../images/path-tracer.png";
 
 const projects: Work[] = [
+  {
+    title: "Path Tracer",
+    url: "https://github.com/ryanloftus/path-tracer",
+    imageSrc: pathTracerImage,
+    description: "A path tracer with realistic metals and glass using microfacet models and Fresnel reflection.",
+    technologies: ["C++"],
+  },
   {
     title: "CivicSearch Geomentions",
     url: "https://medium.com/@ryanloftus02/finding-mentions-of-local-places-in-city-council-meetings-c3c6bd16ae42",
