@@ -8,8 +8,16 @@ import pokemonOceanBlueImage from "../images/pokemon-oceanblue.png";
 import socialMediaBackendImage from "../images/social-media-backend.png";
 import algoVisualizerImage from "../images/algo-visualizer.png";
 import pathTracerImage from "../images/path-tracer.png";
+import microKernelImage from "../images/micro-kernel.png";
 
 const projects: Work[] = [
+  {
+    title: "Micro-Kernel",
+    url: "https://github.com/ryanloftus/micro-kernel",
+    imageSrc: microKernelImage,
+    description: "A micro-kernel with I/O, a clock, and message passing. Built to support user tasks that control model trains.",
+    technologies: ["C", "ARM"],
+  },
   {
     title: "Path Tracer",
     url: "https://github.com/ryanloftus/path-tracer",
