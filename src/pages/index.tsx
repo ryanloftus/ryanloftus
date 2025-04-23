@@ -6,13 +6,14 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { WritingSection } from "../components/WritingSection";
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
+import { Title } from "../components/Title";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={{fontFamily: 'Inter, sans-serif'}}>
+          <Title />
       <center className="pt-10">
         <article className="text-left max-w-screen-md p-8">
-          <h1 className="text-6xl font-semibold">Hey, I'm Ryan</h1>
           <AboutSection />
           <ContactSection />
           <ProjectsSection />
