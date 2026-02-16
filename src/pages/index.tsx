@@ -1,10 +1,8 @@
 import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { AboutSection } from "../components/AboutSection";
-import { ContactSection } from "../components/ContactSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { WritingSection } from "../components/WritingSection";
-import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
 import { Title } from "../components/Title";
 
@@ -15,7 +13,6 @@ const IndexPage: React.FC<PageProps> = () => {
       <center className="pt-10">
         <article className="text-left max-w-screen-md p-8">
           <AboutSection />
-          <ContactSection />
           <ProjectsSection />
         </article>
       </center>
