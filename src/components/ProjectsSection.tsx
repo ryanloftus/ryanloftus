@@ -9,8 +9,17 @@ import socialMediaBackendImage from "../images/social-media-backend.png";
 import algoVisualizerImage from "../images/algo-visualizer.png";
 import pathTracerImage from "../images/path-tracer.png";
 import microKernelImage from "../images/micro-kernel.png";
+import gameboyEmulatorImage from "../images/gameboy-emulator.png";
 
 const projects: Work[] = [
+  {
+    title: "Gameboy Emulator",
+    url: "https://github.com/ryanloftus/gameboy-emulator",
+    imageSrc: gameboyEmulatorImage,
+    imageAltText: "Screenshot of a Gameboy emulator running Pokemon Blue, with the player in the middle of a battle.",
+    description: "A Gameboy emulator written in C++. Supports bank switching, interrupts, and the Gameboy's graphics system.",
+    technologies: ["C++"],
+  },
   {
     title: "Micro-Kernel",
     url: "https://github.com/ryanloftus/micro-kernel",
